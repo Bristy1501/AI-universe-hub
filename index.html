@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.6.2/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <header class="container text-center">
+        <h2 class="text-6xl">AI Universe Hub</h2>
+    </header>
+    <main class="container mx-auto">
+        <section>
+            <div id="sort-button-container" class="text-center my-8">
+                <button id="sort-btn" class="btn btn-error text-white font-bold ">Sort By Date</button>
+            </div>
+
+        </section>
+        <section>
+            <div id="universe-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+            </div>
+        </section>
+        <section>
+            <div id="sort-button-container" class="text-center my-8">
+                <button id="see-all" class="hidden btn btn-error text-white font-bold ">See All</button>
+            </div>
+
+        </section>
+        <!-- You can open the modal using ID.showModal() method -->
+        <dialog id="show_details_modal" class="modal">
+            <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+                <button class="btn btn-sm btn-circle btn-ghost absolute right-0 top-0 bg-red-600 rounded-full">✕</button>
+                <div id="show-detail-container">
+
+                </div>
+            </form>
+        </dialog>
+    </main>
+    <footer>
+
+        <section>
+            
+        </section>
+    </footer>
+    <script src="universe.js"></script>
+</body>
+
+</html>
